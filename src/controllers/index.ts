@@ -1,0 +1,1 @@
+export {RamenShopController} from "./RamenShop_controller"
