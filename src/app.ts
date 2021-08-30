@@ -1,11 +1,13 @@
 import "reflect-metadata";
 import { createConnection, getRepository } from "typeorm";
-const express = require("express");
 import { RamenShopController } from "./controllers";
 import { createExpressServer } from "routing-controllers";
+import { RamenTypeController } from "./controllers/RamenType_controller";
+const express = require("express");
 
 
-const app = createExpressServer({routePrefix: "/ramenapi", controllers: [RamenShopController] });
+
+const app = createExpressServer({routePrefix: "/ramenapi", controllers: [RamenShopController, RamenTypeController] });
 app.use(express.json());
 
 const App = async () => {

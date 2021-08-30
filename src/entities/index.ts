@@ -1,1 +1,2 @@
-export {RamenShop} from "./RamenShop"
+export { RamenShop } from "./RamenShop"
+export {RamenType} from "./RamenType"

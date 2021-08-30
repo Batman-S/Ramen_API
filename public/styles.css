@@ -1,0 +1,12 @@
+* {
+    background-color: #f1c8a5;
+    align-items: center;
+}
+
+#title{
+    font-family: 'Rampart One', cursive;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #a83f33;
+    justify-content: center;
+}

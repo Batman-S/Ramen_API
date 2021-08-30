@@ -1,22 +1,19 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
+import {RamenType} from "./index"
 
-@Entity({name: "ramenshop"})
+@Entity({ name: "ramenshop" })
 export class RamenShop {
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
-    @PrimaryGeneratedColumn("uuid")
-    id: string;
+  @Column()
+  name: string;
 
-    @Column()
-    name: string;
+  @Column()
+  location: string;
 
-    @Column()
-    location: string;
-
-    @Column()
-    type: string;
-
-
+  @ManyToOne(() => RamenType, (ramentype) => ramentype.name)
+  type: RamenType;
 }
-
 
 export default RamenShop;
