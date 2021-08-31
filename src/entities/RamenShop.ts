@@ -14,6 +14,7 @@ export class RamenShop {
 
   @ManyToOne(() => RamenType) //, (ramentype) => ramentype.ramenshops
   type: RamenType;
+
   
 }
 

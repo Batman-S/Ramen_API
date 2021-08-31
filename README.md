@@ -4,7 +4,9 @@
 
 Hungry already?
 
-Find your perfect bowl with Ramen API!
+Find your perfect bowl with Ramen API!.
+
+**This was created during my time as a student at Code Chrysalis.**
 
 # Getting Started
 
@@ -86,4 +88,4 @@ _**All endpoints are prefixed with**_ `/ramenapi`
 
 
 # Contributors
-* Batman-S (Stephen Batman)
+* Batman-S 

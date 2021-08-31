@@ -11,7 +11,7 @@ export class RamenShopManager {
     }
 
     async getAll() {
-        return await this.ramenShopRepository.find();
+        return await this.ramenShopRepository.find({relations: ['type']});
     }
 
     async getOne(identifier: string) {
