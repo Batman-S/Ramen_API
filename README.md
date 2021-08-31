@@ -65,3 +65,25 @@ _**All endpoints are prefixed with**_ `/ramenapi`
 ### Delete
 * `/ramentype/:id`
     * Deletes specific ramen type designated by the id parameter.
+
+# Entities
+
+## RamenShop
+
+<p>RamenShop entity type located in src/entities. It consists of:</p>
+
+```javascript
+{id: string("uuid"), name: string, type: string, location:string }
+```
+
+## RamenType
+
+<p>RamenType entity type located in src/entities. It consists of:</p>
+
+```javascript
+{id: string("uuid"), name: string, description: string}
+```
+
+
+# Contributors
+* Batman-S (Stephen Batman)

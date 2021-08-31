@@ -12,8 +12,9 @@ export class RamenShop {
   @Column()
   location: string;
 
-  @ManyToOne(() => RamenType, (ramentype) => ramentype.name)
+  @ManyToOne(() => RamenType) //, (ramentype) => ramentype.ramenshops
   type: RamenType;
+  
 }
 
 export default RamenShop;
