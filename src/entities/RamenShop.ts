@@ -7,7 +7,7 @@ export class RamenShop extends Model {
   @Column()
   location: string;
 
-  @ManyToOne(() => RamenType) //, (ramentype) => ramentype.ramenshops
+  @ManyToOne(() => RamenType) 
   type: RamenType;
 }
 

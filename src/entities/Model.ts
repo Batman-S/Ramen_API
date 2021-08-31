@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
+import { PrimaryGeneratedColumn, Column} from "typeorm";
 
 export abstract class Model {
   @PrimaryGeneratedColumn("uuid")

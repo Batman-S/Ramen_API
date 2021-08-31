@@ -35,7 +35,7 @@ export class RamenShopManager {
   async updateShop(identifier: string, details: Partial<RamenShop>) {
     try {
       const targetShop = await this.ramenShopRepository.findOne(identifier);
-      const updatedShop = await this.ramenShopRepository.merge(
+      const updatedShop =  this.ramenShopRepository.merge(
         targetShop,
         details
       );

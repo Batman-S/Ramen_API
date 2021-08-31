@@ -76,7 +76,7 @@ _**All endpoints are prefixed with**_ `/ramenapi`
 <p>RamenShop entity type located in src/entities. It consists of:</p>
 
 ```javascript
-{id: string("uuid"), name: string, type: string, location:string }
+{id: string("uuid"), name: string, type: RamenType, location:string }
 ```
 
 ## RamenType
@@ -84,7 +84,7 @@ _**All endpoints are prefixed with**_ `/ramenapi`
 <p>RamenType entity type located in src/entities. It consists of:</p>
 
 ```javascript
-{id: string("uuid"), name: string, description: string}
+{id: string("uuid"), name: string, description: string, ramenshops: RamenShop[]}
 ```
 
 
