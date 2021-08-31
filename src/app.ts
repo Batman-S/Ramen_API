@@ -1,8 +1,8 @@
 import "reflect-metadata";
-import { createConnection, getRepository } from "typeorm";
+import { createConnection} from "typeorm";
 import { RamenShopController } from "./controllers";
 import { createExpressServer } from "routing-controllers";
-import { RamenTypeController } from "./controllers/RamenType_controller";
+import { RamenTypeController } from "./controllers";
 const express = require("express");
 
 

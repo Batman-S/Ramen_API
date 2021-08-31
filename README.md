@@ -35,7 +35,7 @@ _**All endpoints are prefixed with**_ `/ramenapi`
     * Accepts JSON formated data matching entity type **Ramen Shop** (see Entities below)
 ### Read
 * `/ramenshop`
-   * Retrieves a list of all available ramen shops in the database 
+   * Retrieves a list of all available ramen shops in the database and their associated types
 * `/ramenshop/:id`
     * Retrives one specific ramen shop designated by the id parameter
 
@@ -58,6 +58,7 @@ _**All endpoints are prefixed with**_ `/ramenapi`
    * Retrieves a list of all available ramen types in the database 
 * `/ramentype/:id`
     * Retrives one specific ramen type designated by the id parameter
+    * Displays all associated ramenshops with that ramen type
 
 ### Update
 * `/ramentype/:id`
